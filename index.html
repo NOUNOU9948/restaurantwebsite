@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Délice Gourmet - Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-utensils"></i> Le Délice Gourmet
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galerie">Galerie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="accueil" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="display-3 text-white fw-bold mb-4">Bienvenue au Délice Gourmet</h1>
+            <p class="lead text-white mb-4">Une expérience culinaire exceptionnelle</p>
+            <a href="#menu" class="btn btn-primary btn-lg me-3">Voir le Menu</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Réserver</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800" 
+                         alt="Restaurant intérieur" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Notre Histoire</h2>
+                    <p class="text-muted mb-3">
+                        Depuis 2010, Le Délice Gourmet vous accueille dans un cadre chaleureux et élégant 
+                        pour vous faire découvrir une cuisine raffinée et authentique.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Notre chef, passionné par l'art culinaire, sélectionne avec soin les meilleurs 
+                        ingrédients locaux et de saison pour créer des plats qui raviront vos papilles.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="feature-box">
+                                <i class="fas fa-award text-primary fs-2 mb-2"></i>
+                                <h5>Chef Étoilé</h5>
+                                <p class="small text-muted">15 ans d'expérience</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="feature-box">
+                                <i class="fas fa-leaf text-success fs-2 mb-2"></i>
+                                <h5>Produits Bio</h5>
+                                <p class="small text-muted">100% locaux et frais</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Nos Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card text-center p-4">
+                        <i class="fas fa-concierge-bell fs-1 text-primary mb-3"></i>
+                        <h4>Service en Salle</h4>
+                        <p class="text-muted">
+                            Un service impeccable dans une ambiance raffinée. Notre équipe est à votre 
+                            disposition pour rendre votre expérience inoubliable.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center p-4">
+                        <i class="fas fa-motorcycle fs-1 text-success mb-3"></i>
+                        <h4>Livraison</h4>
+                        <p class="text-muted">
+                            Profitez de nos délicieux plats chez vous. Livraison rapide et soignée 
+                            dans un rayon de 10 km.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center p-4">
+                        <i class="fas fa-glass-cheers fs-1 text-warning mb-3"></i>
+                        <h4>Événements</h4>
+                        <p class="text-muted">
+                            Organisez vos événements privés dans notre espace dédié. 
+                            Mariages, anniversaires, séminaires...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Notre Menu</h2>
+            
+            <!-- Tabs -->
+            <ul class="nav nav-pills justify-content-center mb-5" id="menuTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="entrees-tab" data-bs-toggle="pill" 
+                            data-bs-target="#entrees" type="button">Entrées</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="plats-tab" data-bs-toggle="pill" 
+                            data-bs-target="#plats" type="button">Plats</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="desserts-tab" data-bs-toggle="pill" 
+                            data-bs-target="#desserts" type="button">Desserts</button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="menuTabContent">
+                <!-- ENTRÉES -->
+                <div class="tab-pane fade show active" id="entrees">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="menu-item d-flex">
+                                <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?w=200" 
+                                     alt="Salade César" class="menu-img">
+                                <div class="ms-3 flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Salade César Royale</h5>
+                                        <span class="text-primary fw-bold">12€</span>
+                                    </div>
+                                    <p class="text-muted small">Laitue romaine, parmesan, croûtons maison, 
+                                    sauce César, poulet grillé</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="menu-item d-flex">
+                                <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=200" 
+                                     alt="Soupe" class="menu-img">
+                                <div class="ms-3 flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Soupe à l'Oignon Gratinée</h5>
+                                        <span class="text-primary fw-bold">9€</span>
+                                    </div>
+                                    <p class="text-muted small">Oignons caramélisés, bouillon de bœuf, 
+                                    gruyère fondu, croûtons</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="menu-item d-flex">
+                                <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=200" 
+                                     alt="Tartare" class="menu-img">
+                                <div class="ms-3 flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Tartare de Saumon</h5>
+                                        <span class="text-primary fw-bold">14€</span>
+                                    </div>
+                                    <p class="text-muted small">Saumon frais, avocat, citron vert, 
+                                    coriandre, toast</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="menu-item d-flex">
+                                <img src="https://images.unsplash.com/photo-1601001435750-1f1d91e6a4f2?w=200" 
+                                     alt="Escargots" class="menu-img">
+                                <div class="ms-3 flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Escargots de Bourgogne</h5>
+                                        <span class="text-primary fw-bold">13€</span>
+                                    </div>
+                                    <p class="text-muted small">Beurre persillé, ail, 6 pièces</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PLATS -->
+                <div class="tab-pane fade" id="plats">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="menu-item d-flex">
+                                <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=200" 
+                                     alt="Bœuf" class="menu-img">
+                                <div class="ms-3 flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Filet de Bœuf Rossini</h5>
+                                        <span class="text-primary fw-bold">28€</span>
+                                    </div>
+                                    <p class="text-muted small">Filet mignon, foie gras poêlé, 
+                                    sauce truffe, légumes de saison</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="menu-item d-flex">
+                                <img src="https://images.unsplash.com/photo-1485921325833-c519f76c4927?w=200" 
+                                     alt="Saumon" class="menu-img">
+                                <div class="ms-3 flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Pavé de Saumon Grillé</h5>
+                                        <span class="text-primary fw-bold">24€</span>
+                                    </div>
+                                    <p class="text-muted small">Saumon sauvage, sauce hollandaise, 
+                                    riz basmati, asperges</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="menu-item d-flex">
+                                <img src="https://images.unsplash.com/photo-1562158147-b4d61a5e23e7?w=200" 
+                                     alt="Poulet" class="menu-img">
+                                <div class="ms-3 flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Suprême de Poulet Forestier</h5>
+                                        <span class="text-primary fw-bold">22€</span>
+                                    </div>
+                                    <p class="text-muted small">Poulet fermier, champignons, 
+                                    crème, pommes grenaille</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="menu-item d-flex">
+                                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=200" 
+                                     alt="Risotto" class="menu-img">
+                                <div class="ms-3 flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Risotto aux Fruits de Mer</h5>
+                                        <span class="text-primary fw-bold">26€</span>
+                                    </div>
+                                    <p class="text-muted small">Riz arborio, crevettes, moules, 
+                                    calamars, safran</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DESSERTS -->
+                <div class="tab-pane fade" id="desserts">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="menu-item d-flex">
+                                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=200" 
+                                     alt="Tiramisu" class="menu-img">
+                                <div class="ms-3 flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Tiramisu Maison</h5>
+                                        <span class="text-primary fw-bold">8€</span>
+                                    </div>
+                                    <p class="text-muted small">Mascarpone, biscuits, café, cacao</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="menu-item d-flex">
+                                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=200" 
+                                     alt="Tarte" class="menu-img">
+                                <div class="ms-3 flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Tarte Tatin</h5>
+                                        <span class="text-primary fw-bold">9€</span>
+                                    </div>
+                                    <p class="text-muted small">Pommes caramélisées, pâte feuilletée, 
+                                    glace vanille</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="menu-item d-flex">
+                                <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=200" 
+                                     alt="Crème brûlée" class="menu-img">
+                                <div class="ms-3 flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Crème Brûlée à la Vanille</h5>
+                                        <span class="text-primary fw-bold">7€</span>
+                                    </div>
+                                    <p class="text-muted small">Crème onctueuse, vanille bourbon, 
+                                    sucre caramélisé</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="menu-item d-flex">
+                                <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=200" 
+                                     alt="Fondant" class="menu-img">
+                                <div class="ms-3 flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Fondant au Chocolat</h5>
+                                        <span class="text-primary fw-bold">8€</span>
+                                    </div>
+                                    <p class="text-muted small">Cœur coulant, glace vanille, 
+                                    coulis fruits rouges</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIE SECTION -->
+    <section id="galerie" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Notre Galerie</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600" 
+                             alt="Plat gastronomique" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" 
+                             alt="Cuisine du chef" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600" 
+                             alt="Petit déjeuner" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600" 
+                             alt="Bar à vin" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600" 
+                             alt="Terrasse" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600" 
+                             alt="Cocktails" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Contactez-nous</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Informations</h4>
+                        <div class="mb-3">
+                            <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                            <strong>Adresse:</strong> 123 Rue de la Gastronomie, 75001 Paris
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-phone text-primary me-2"></i>
+                            <strong>Téléphone:</strong> +33 1 23 45 67 89
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <strong>Email:</strong> contact@delicegourmet.fr
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-clock text-primary me-2"></i>
+                            <strong>Horaires:</strong><br>
+                            <span class="ms-4">Lun-Ven: 12h-14h30 & 19h-22h30</span><br>
+                            <span class="ms-4">Sam-Dim: 12h-15h & 19h-23h</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-primary btn-sm">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Votre nom" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Votre email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Votre téléphone">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Le Délice Gourmet. Tous droits réservés.</p>
+            <p class="small">Créé avec <i class="fas fa-heart text-danger"></i> par votre équipe</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
